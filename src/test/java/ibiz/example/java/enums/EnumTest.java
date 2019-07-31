@@ -10,4 +10,10 @@ public class EnumTest {
 		System.out.println(JavaEnum.SWITCH_TEST1.getCode());
 		System.out.println(JavaEnum.SWITCH_TEST1.getValue());
 	}
+	
+	@Test
+	public void enumOrderer() {
+		for(JavaEnum javaEnum : JavaEnum.values()) 
+			System.out.println(javaEnum.getCode());
+	}
 }
