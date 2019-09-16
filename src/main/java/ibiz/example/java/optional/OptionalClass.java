@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import org.junit.Test;
-
 public class OptionalClass {
 
 	public Optional<String> createEmptyOptional() {
@@ -55,9 +53,4 @@ public class OptionalClass {
 		return Optional.empty().orElseThrow(() -> new Exception("data is null..."));
 	}
 	
-	@Test
-	public void test() {
-		String a = "java";
-		System.out.println(a.toUpperCase());
-	}
 }
